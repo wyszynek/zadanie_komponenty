@@ -31,11 +31,6 @@ export class BusinessCardComponent {
       this.previousValue = this.interests[which];
   }
 
-  saveInterest(): void {
-    this.selected = -1;
-    this.previousValue = null;
-  }
-
   cancelEdit(): void {
     if(this.selected > -1 && this.previousValue !== null) {
       this.interests[this.selected] = this.previousValue;
