@@ -30,4 +30,14 @@
 }
 </div>
 
+<div *ngIf="students.length > 0">
+    <p>Liczba studentów: {{ students.length }} {{ getStudentLabel(students.length) }}</p>
+    <ul>
+      <li *ngFor="let student of students">{{ student }}</li>
+    </ul>
+  </div>
+  <div *ngIf="students.length === 0">
+    <p>Brak studentów</p>
+</div>
+
 

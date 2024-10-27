@@ -37,5 +37,12 @@ export class BusinessCardComponent {
     }
   }
 
+  students: string[] = ['Adam', 'Kasia', 'Piotr', 'Ola']; 
+
+  getStudentLabel(count: number): string {
+    if (count === 1) return 'student';
+    if (count >= 2 && count <= 4) return 'studentów';
+    return 'studentów';
+  }
   
 }
